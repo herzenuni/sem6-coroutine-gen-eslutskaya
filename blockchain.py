@@ -27,8 +27,8 @@ def create_genesis_block():
 
 def next_block(last_block):
     current_timestamp = date.datetime.now()
-    current_index = last_block.index+1
-    current_data = str(current_index)+string.ascii_lowercase
+    current_index = last_block.index+1000
+    current_data = str(current_index)+'Kate'
 
     current_hash = last_block.hash
 
